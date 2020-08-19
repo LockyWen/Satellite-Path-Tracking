@@ -1,6 +1,7 @@
 # Satellite-Path-Tracking 
 
-##A ReactJS based Starlink Trajectory Visulization App.
+**A ReactJS based Starlink Trajectory Visulization App.**
+
 The project is created to help keep track of the path of satellites sent by N2YO.
 Hence, we called the APIs from N2YO.
 
