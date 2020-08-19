@@ -1,68 +1,73 @@
+# Satellite-Path-Tracking 
+
+##A ReactJS based Starlink Trajectory Visulization App.
+The project is created to help keep track of the path of satellites sent by N2YO.
+Hence, we called the APIs from N2YO.
+
+You should sign up to the N2YO and get the API key at first before you execute this project. 
+
+Then you can download the code and put the API key inside the code. You can then run the code in Browser and see how it works.  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+#### What we do: 
 
-### `npm start`
+1. Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on geo-location.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Built location, altitude, and duration based selector to refine satellite search.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3. Animated selected satellite paths on a world map using D3 to improve the user friendness.
 
-### `npm test`
+4. Deployed the dashboard to Amazon Web Service for demonstration. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Application URL 
 
-### `npm run build`
+https://github.com/LockyWen/Satellite-Path-Tracking
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click this URL to pull the code. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Start quickly for this project (Assme that you set up VS code)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 1. Install Node
 
-### `npm run eject`
+Please refer to https://nodejs.org/en/ to install node.js. I use version 12.8.3 LTS.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### 2. Get a key for API calls
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Register on N2YO: https://www.n2yo.com/login/register then you can get your 
+API key. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### 3. Install create-react-app
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In your IDE terminal, use command 
 
-## Learn More
+`npm install -g create-react-app`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+to help you create a react app environment and also build the source 
+libraries easily. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 4. Clone and run the app in local. 
 
-### Code Splitting
+Install all the npm packages by using the command line 
+`npm install`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+After that, we should type `npm start` to run this application. 
 
-### Analyzing the Bundle Size
+The application runs on localhost:3000
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The url is shown below: http://localhost:3000/
 
-### Making a Progressive Web App
+NOTE: if your port 3000 is occupied (e.g., you are running other app using this 
+port at the same time), then the local will change to another port like 3001, 3002 ....
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Application Design
 
-### Advanced Configuration
+## References 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+**create-react-app** : To see the commands that can be used with create-react-app. Please refer to https://github.com/facebook/create-react-app
 
-### Deployment
+**ReactJS** : To learn more about ReactJS, please refer to https://reactjs.org/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**React Bootstrap** : To know more about react BootStrap, please refer to https://react-bootstrap.github.io/getting-started/introduction/
