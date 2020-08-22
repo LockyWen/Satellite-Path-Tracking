@@ -4,19 +4,29 @@ import Satellite from "../assets/images/Satellite.svg";
 
 
 class SatelliteList extends Component{
-    render(){
-        const satList = this.props.satInfo ? this.props.satInfo.above : [];
+    onChange = e => {
+        const { dataInfo, checked } = e.target;
+        this.props.onSelectionChange(dataInfo, checked);
+    }
 
+
+    render() {
+        const satList = this.props.satInfo ? this.props.satInfo.above : [];
 
         return (
             <div className="sat-list-box">
-                <Button className="sat-list-btn"
-                size="large">Track on the map</Button>
-                <hr />
-
+                <Button 
+                    className="sat-list-btn"
+                    size="large"
+                    disabled={this.props.disableTrack}
+                    onClick={() => this.props.trackOnclick()}
+                >
+                    Track on the map
+                </Button>
+                <hr/>
                 {
                     this.props.loading ?
-                    <Spin tip="Loading Satellites..." />:
+                    <Spin tip="Loading Satellites..." /> :
                     <List
                         className="sat-list"
                         itemLayout="horizontal"
@@ -35,8 +45,7 @@ class SatelliteList extends Component{
                             </List.Item>
                         )}
                     />
-                        }
-                
+                }
             </div>
         );
     }
