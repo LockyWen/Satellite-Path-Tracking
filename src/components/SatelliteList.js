@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { List, Avatar, Button, Checkbox, Spin, InputNumber} from 'antd';
-import Satellite from "../assets/images/Satellite.svg";
+import {ReactComponent as Satellite} from "../assets/images/Satellite.svg";
 
 
 class SatelliteList extends Component{

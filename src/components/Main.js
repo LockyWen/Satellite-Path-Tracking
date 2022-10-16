@@ -40,12 +40,15 @@ class Main extends Component {
       const urls = this.state.selected.map( sat => {
           const { satid } = sat;
           const url = `${SATELLITE_POSITION_URL}/${satid}/${observerLat}/${observerLong}/${observerAlt}/${endTime}/&apiKey=${SAT_API_KEY}`;
+          console.log('CURRENT URL IS')
+          console.log(url)
           return Axios.get(url);
       });
 
       Axios.all(urls)
         .then(
           Axios.spread((...args) => {
+            console.log(args)
               return args.map(item => item.data);
           })
         )
